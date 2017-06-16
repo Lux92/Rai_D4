@@ -1,0 +1,153 @@
+file 2539599 1497620878                                         
+version 2
+run General-0-20170616-15:45:19-7431
+attr configname General
+attr datetime 20170616-15:45:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Test
+attr processid 7431
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.app.StartTime 0s
+param **.iWirelessNic.mac.useMACAcks false
+param **.mobility.constraintAreaMaxX 200m
+param **.mobility.constraintAreaMaxY 200m
+param **.mobility.constraintAreaMaxZ 0m
+param **.mobility.constraintAreaMinX 0m
+param **.mobility.constraintAreaMinY 0m
+param **.mobility.constraintAreaMinZ 0m
+param **.node[*].Network.Dest 6
+param **.node[*].mobility.initialX uniform(20m,200m)
+param **.node[*].mobility.initialY uniform(20m,200m)
+param **.node[0].Network.Id 0
+param **.node[0].app.Period 10s
+param **.node[1].Network.Id 1
+param **.node[1].app.Period 15s
+param **.node[2].Network.Id 2
+param **.node[2].app.Period 20s
+param **.node[3].Network.Id 3
+param **.node[3].app.Period 25s
+param **.node[4].Network.Id 4
+param **.node[4].app.Period 30s
+param **.node[5].Network.Id 5
+param **.node[5].app.Period 35s
+param **.node[6].Network.Id 6
+param **.node[6].app.Period 40s
+param **.numNodes 7
+
+vector 7  Test.node[0].iWirelessNic.radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 10  Test.node[1].iWirelessNic.radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 13  Test.node[2].iWirelessNic.radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 16  Test.node[3].iWirelessNic.radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 19  Test.node[4].iWirelessNic.radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 22  Test.node[5].iWirelessNic.radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 25  Test.node[6].iWirelessNic.radio  radioMode:vector  ETV
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, vector"
+vector 8  Test.node[0].iWirelessNic.radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 11  Test.node[1].iWirelessNic.radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 14  Test.node[2].iWirelessNic.radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 17  Test.node[3].iWirelessNic.radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 20  Test.node[4].iWirelessNic.radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 23  Test.node[5].iWirelessNic.radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 26  Test.node[6].iWirelessNic.radio  receptionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, vector"
+vector 9  Test.node[0].iWirelessNic.radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 18  Test.node[3].iWirelessNic.radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 15  Test.node[2].iWirelessNic.radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 21  Test.node[4].iWirelessNic.radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 27  Test.node[6].iWirelessNic.radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 12  Test.node[1].iWirelessNic.radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 24  Test.node[5].iWirelessNic.radio  transmissionState:vector  ETV
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, vector"
+vector 0  Test.node[0]  E2E:vector  ETV
+vector 6  Test.node[6]  E2E:vector  ETV
+0	5164 72 17813 17861 5.01321323324 5.03055723324 2 5.01321323324 5.03055723324 10.04377046648 50.438812998836
+6	5236 43099 18051 135315 5.118685589781 20620.069056768337 1032 0.067136768337 5.118685589781 78.585333745228 31.438206132967
+7	48335 62592 0 135423 0 20640.070656465836 2198 0 3 5492 14278
+8	110927 252797 0 135423 0 20640.070656465836 8887 0 3 14487 34537
+9	363724 125151 23 135423 0.000128 20640.070656465836 4392 0 2 4392 6588
+10	488875 64499 0 135398 0 20640.052672279371 2186 0 3 5462 14200
+11	553374 259871 0 135424 0 20640.070656652301 8897 0 3 14525 34631
+12	813245 128962 281 135398 0.068865036782 20640.052672279371 4368 0 2 4368 6552
+13	942207 52303 0 135349 0 20640.017664 2194 0 3 5482 14252
+14	994510 248278 0 135419 0 20640.054272771703 8846 0 3 14404 34340
+15	1242788 103424 118 135349 0.018752305867 20640.017664 4384 0 2 4384 6576
+16	1346212 2890 0 17677 0 4.976605111702 116 0 3 287 745
+17	1349102 197759 0 135421 0 20640.054272956032 6726 0 3 13281 33103
+18	1546861 5744 107 17677 0.017152490196 4.976605111702 228 0 2 228 342
+19	1552605 3010 0 17758 0 4.993629336005 120 0 3 297 771
+20	1555615 259159 0 135420 0 20640.054272824674 8868 0 3 17572 43830
+21	1814774 5984 178 17758 0.034816714499 4.993629336005 236 0 2 236 354
+22	1820758 64034 0 135373 0 20640.034688060262 2168 0 3 5417 14083
+23	1884792 259453 0 135417 0 20640.054272726036 8880 0 3 14519 34647
+24	2144245 128032 334 135373 0.085889255891 20640.034688060262 4332 0 2 4332 6498
+25	2272277 2090 0 17954 0 5.064476924007 84 0 3 207 537
+26	2274367 261088 0 135418 0 20640.054272768337 8863 0 3 17603 43933
+27	2535455 4144 228 17954 0.052161063175 5.064476924007 164 0 2 164 246

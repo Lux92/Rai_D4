@@ -1,0 +1,1392 @@
+version 2
+run General-0-20170616-15:45:19-7431
+attr configname General
+attr datetime 20170616-15:45:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Test
+attr processid 7431
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.app.StartTime 0s
+param **.iWirelessNic.mac.useMACAcks false
+param **.mobility.constraintAreaMaxX 200m
+param **.mobility.constraintAreaMaxY 200m
+param **.mobility.constraintAreaMaxZ 0m
+param **.mobility.constraintAreaMinX 0m
+param **.mobility.constraintAreaMinY 0m
+param **.mobility.constraintAreaMinZ 0m
+param **.node[*].Network.Dest 6
+param **.node[*].mobility.initialX uniform(20m,200m)
+param **.node[*].mobility.initialY uniform(20m,200m)
+param **.node[0].Network.Id 0
+param **.node[0].app.Period 10s
+param **.node[1].Network.Id 1
+param **.node[1].app.Period 15s
+param **.node[2].Network.Id 2
+param **.node[2].app.Period 20s
+param **.node[3].Network.Id 3
+param **.node[3].app.Period 25s
+param **.node[4].Network.Id 4
+param **.node[4].app.Period 30s
+param **.node[5].Network.Id 5
+param **.node[5].app.Period 35s
+param **.node[6].Network.Id 6
+param **.node[6].app.Period 40s
+param **.numNodes 7
+
+scalar Test.radioMedium.propagation 	"Arrival computation count" 	27156
+scalar Test.radioMedium 	"transmission count" 	4526
+scalar Test.radioMedium 	"radio frame send count" 	27156
+scalar Test.radioMedium 	"reception computation count" 	27156
+scalar Test.radioMedium 	"interference computation count" 	84865
+scalar Test.radioMedium 	"reception decision computation count" 	25360
+scalar Test.radioMedium 	"listening decision computation count" 	32569
+scalar Test.radioMedium 	"reception cache hit" 	85.363487409452
+attr unit  %
+scalar Test.radioMedium 	"interference cache hit" 	66.666666666667
+attr unit  %
+scalar Test.radioMedium 	"noise cache hit" 	0
+attr unit  %
+scalar Test.radioMedium 	"snir cache hit" 	50
+attr unit  %
+scalar Test.radioMedium 	"reception decision cache hit" 	50
+attr unit  %
+scalar Test.radioMedium 	"reception result cache hit" 	0
+attr unit  %
+scalar Test.node[0].iWirelessNic.mac 	nbTxFrames 	1098
+scalar Test.node[0].iWirelessNic.mac 	nbRxFrames 	1113
+scalar Test.node[0].iWirelessNic.mac 	nbDroppedFrames 	129
+scalar Test.node[0].iWirelessNic.mac 	nbMissedAcks 	0
+scalar Test.node[0].iWirelessNic.mac 	nbRecvdAcks 	0
+scalar Test.node[0].iWirelessNic.mac 	nbTxAcks 	0
+scalar Test.node[0].iWirelessNic.mac 	nbDuplicates 	0
+scalar Test.node[0].iWirelessNic.mac 	meanBackoff 	0.0021197809419496
+scalar Test.node[0].iWirelessNic.mac 	nbBackoffs 	1826
+scalar Test.node[0].iWirelessNic.mac 	backoffDurations 	3.87072
+scalar Test.node[0].iWirelessNic.radio 	transmissionState:count 	4392
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Test.node[0].iWirelessNic.radio 	receptionState:count 	8887
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Test.node[0].iWirelessNic.radio 	radioMode:count 	2198
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Test.node[0].iWirelessNic.radio 	symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Test.node[0].iWirelessNic.radio 	bitErrorRate:histogram
+field count 3327
+field mean 0.0014736671927738
+field stddev 0.019074007624349
+field sum 4.9028907503585
+field sqrsum 1.2172831218041
+field min 3.0242071545795e-103
+field max 0.43167817455631
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.21583908727815	0
+bin	-0.18706054230773	0
+bin	-0.15828199733731	0
+bin	-0.12950345236689	0
+bin	-0.10072490739647	0
+bin	-0.071946362426051	0
+bin	-0.043167817455631	0
+bin	-0.01438927248521	3301
+bin	0.01438927248521	4
+bin	0.043167817455631	0
+bin	0.071946362426051	2
+bin	0.10072490739647	2
+bin	0.12950345236689	0
+bin	0.15828199733731	0
+bin	0.18706054230773	13
+bin	0.21583908727815	1
+bin	0.24461763224857	0
+bin	0.27339617721899	0
+bin	0.30217472218941	2
+bin	0.33095326715983	0
+bin	0.35973181213025	0
+bin	0.38851035710067	0
+bin	0.4172889020711	2
+bin	0.44606744704152	0
+bin	0.47484599201194	0
+bin	0.50362453698236	0
+bin	0.53240308195278	0
+bin	0.5611816269232	0
+bin	0.58996017189362	0
+bin	0.61873871686404	0
+bin	0.64751726183446	0
+statistic Test.node[0].iWirelessNic.radio 	packetErrorRate:histogram
+field count 3327
+field mean 0.010065238845319
+field stddev 0.095825300066465
+field sum 33.487049638375
+field sqrsum 30.878010682621
+field min 0
+field max 1
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.43333333333333	0
+bin	-0.36666666666667	0
+bin	-0.3	0
+bin	-0.23333333333333	0
+bin	-0.16666666666667	0
+bin	-0.1	0
+bin	-0.033333333333333	3285
+bin	0.033333333333333	4
+bin	0.1	1
+bin	0.16666666666667	0
+bin	0.23333333333333	0
+bin	0.3	0
+bin	0.36666666666667	0
+bin	0.43333333333333	0
+bin	0.5	8
+bin	0.56666666666667	0
+bin	0.63333333333333	0
+bin	0.7	1
+bin	0.76666666666667	0
+bin	0.83333333333333	0
+bin	0.9	1
+bin	0.96666666666667	27
+bin	1.0333333333333	0
+bin	1.1	0
+bin	1.1666666666667	0
+bin	1.2333333333333	0
+bin	1.3	0
+bin	1.3666666666667	0
+bin	1.4333333333333	0
+bin	1.5	0
+statistic Test.node[0].iWirelessNic.radio 	minSNIR:histogram
+field count 3327
+field mean 11.770975025206
+field stddev 8.4181414501542
+field sum 39162.03390886
+field sqrsum 696672.66388666
+field min 0.039521785217988
+field max 23.744590998004
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-11.813012821175	0
+bin	-10.232674873656	0
+bin	-8.6523369261368	0
+bin	-7.0719989786177	0
+bin	-5.4916610310987	0
+bin	-3.9113230835796	0
+bin	-2.3309851360606	0
+bin	-0.75064718854154	27
+bin	0.82969075897751	37
+bin	2.4100287064966	40
+bin	3.9903666540156	1082
+bin	5.5707046015347	1
+bin	7.1510425490537	1062
+bin	8.7313804965728	0
+bin	10.311718444092	0
+bin	11.892056391611	3
+bin	13.47239433913	0
+bin	15.052732286649	0
+bin	16.633070234168	0
+bin	18.213408181687	0
+bin	19.793746129206	0
+bin	21.374084076725	0
+bin	22.954422024244	1075
+bin	24.534759971763	0
+bin	26.115097919282	0
+bin	27.695435866801	0
+bin	29.27577381432	0
+bin	30.856111761839	0
+bin	32.436449709358	0
+bin	34.016787656878	0
+bin	35.597125604397	0
+scalar Test.node[1].iWirelessNic.mac 	nbTxFrames 	1092
+scalar Test.node[1].iWirelessNic.mac 	nbRxFrames 	1093
+scalar Test.node[1].iWirelessNic.mac 	nbDroppedFrames 	145
+scalar Test.node[1].iWirelessNic.mac 	nbMissedAcks 	0
+scalar Test.node[1].iWirelessNic.mac 	nbRecvdAcks 	0
+scalar Test.node[1].iWirelessNic.mac 	nbTxAcks 	0
+scalar Test.node[1].iWirelessNic.mac 	nbDuplicates 	0
+scalar Test.node[1].iWirelessNic.mac 	meanBackoff 	0.0022658723404255
+scalar Test.node[1].iWirelessNic.mac 	nbBackoffs 	1880
+scalar Test.node[1].iWirelessNic.mac 	backoffDurations 	4.25984
+scalar Test.node[1].iWirelessNic.radio 	transmissionState:count 	4368
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Test.node[1].iWirelessNic.radio 	receptionState:count 	8897
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Test.node[1].iWirelessNic.radio 	radioMode:count 	2186
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Test.node[1].iWirelessNic.radio 	symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Test.node[1].iWirelessNic.radio 	bitErrorRate:histogram
+field count 3333
+field mean 0.0010261521486604
+field stddev 0.016267168616883
+field sum 3.420165111485
+field sqrsum 0.88522603144518
+field min 3.0242071545795e-103
+field max 0.40042198986844
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.20021099493422	0
+bin	-0.17351619560966	0
+bin	-0.1468213962851	0
+bin	-0.12012659696053	0
+bin	-0.09343179763597	0
+bin	-0.066736998311407	0
+bin	-0.040042198986844	0
+bin	-0.013347399662281	3309
+bin	0.013347399662281	1
+bin	0.040042198986844	13
+bin	0.066736998311407	0
+bin	0.09343179763597	3
+bin	0.12012659696053	0
+bin	0.1468213962851	0
+bin	0.17351619560966	0
+bin	0.20021099493422	1
+bin	0.22690579425878	0
+bin	0.25360059358335	0
+bin	0.28029539290791	0
+bin	0.30699019223247	3
+bin	0.33368499155704	0
+bin	0.3603797908816	0
+bin	0.38707459020616	3
+bin	0.41376938953073	0
+bin	0.44046418885529	0
+bin	0.46715898817985	0
+bin	0.49385378750441	0
+bin	0.52054858682898	0
+bin	0.54724338615354	0
+bin	0.5739381854781	0
+bin	0.60063298480267	0
+statistic Test.node[1].iWirelessNic.radio 	packetErrorRate:histogram
+field count 3333
+field mean 0.0096168777581133
+field stddev 0.095040919101289
+field sum 32.053053567792
+field sqrsum 30.40546094159
+field min 0
+field max 1
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.43333333333333	0
+bin	-0.36666666666667	0
+bin	-0.3	0
+bin	-0.23333333333333	0
+bin	-0.16666666666667	0
+bin	-0.1	0
+bin	-0.033333333333333	3294
+bin	0.033333333333333	2
+bin	0.1	0
+bin	0.16666666666667	5
+bin	0.23333333333333	2
+bin	0.3	0
+bin	0.36666666666667	0
+bin	0.43333333333333	0
+bin	0.5	0
+bin	0.56666666666667	0
+bin	0.63333333333333	0
+bin	0.7	0
+bin	0.76666666666667	0
+bin	0.83333333333333	0
+bin	0.9	0
+bin	0.96666666666667	30
+bin	1.0333333333333	0
+bin	1.1	0
+bin	1.1666666666667	0
+bin	1.2333333333333	0
+bin	1.3	0
+bin	1.3666666666667	0
+bin	1.4333333333333	0
+bin	1.5	0
+statistic Test.node[1].iWirelessNic.radio 	minSNIR:histogram
+field count 3333
+field mean 14.168466473278
+field stddev 7.4558965866448
+field sum 47223.498755436
+field sqrsum 854311.75137789
+field min 0.056571385769491
+field max 23.744590998004
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-11.787438420348	0
+bin	-10.208237112865	0
+bin	-8.6290358053831	0
+bin	-7.0498344979008	0
+bin	-5.4706331904185	0
+bin	-3.8914318829362	0
+bin	-2.3122305754539	0
+bin	-0.73302926797165	30
+bin	0.84617203951063	54
+bin	2.4253733469929	50
+bin	4.0045746544752	2
+bin	5.5837759619575	1061
+bin	7.1629772694398	0
+bin	8.742178576922	0
+bin	10.321379884404	0
+bin	11.900581191887	0
+bin	13.479782499369	1062
+bin	15.058983806851	0
+bin	16.638185114333	0
+bin	18.217386421816	0
+bin	19.796587729298	0
+bin	21.37578903678	0
+bin	22.954990344263	1074
+bin	24.534191651745	0
+bin	26.113392959227	0
+bin	27.692594266709	0
+bin	29.271795574192	0
+bin	30.850996881674	0
+bin	32.430198189156	0
+bin	34.009399496639	0
+bin	35.588600804121	0
+scalar Test.node[2].iWirelessNic.mac 	nbTxFrames 	1096
+scalar Test.node[2].iWirelessNic.mac 	nbRxFrames 	91
+scalar Test.node[2].iWirelessNic.mac 	nbDroppedFrames 	77
+scalar Test.node[2].iWirelessNic.mac 	nbMissedAcks 	0
+scalar Test.node[2].iWirelessNic.mac 	nbRecvdAcks 	0
+scalar Test.node[2].iWirelessNic.mac 	nbTxAcks 	0
+scalar Test.node[2].iWirelessNic.mac 	nbDuplicates 	0
+scalar Test.node[2].iWirelessNic.mac 	meanBackoff 	0.0019131428571429
+scalar Test.node[2].iWirelessNic.mac 	nbBackoffs 	1540
+scalar Test.node[2].iWirelessNic.mac 	backoffDurations 	2.94624
+scalar Test.node[2].iWirelessNic.radio 	transmissionState:count 	4384
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Test.node[2].iWirelessNic.radio 	receptionState:count 	8846
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Test.node[2].iWirelessNic.radio 	radioMode:count 	2194
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Test.node[2].iWirelessNic.radio 	symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Test.node[2].iWirelessNic.radio 	bitErrorRate:histogram
+field count 3313
+field mean 0.0018219981353421
+field stddev 0.024726623071566
+field sum 6.0362798223884
+field sqrsum 2.0359743933699
+field min 0
+field max 0.49917580763397
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.24958790381698	0
+bin	-0.21630951664139	0
+bin	-0.18303112946579	0
+bin	-0.14975274229019	0
+bin	-0.11647435511459	0
+bin	-0.083195967938995	0
+bin	-0.049917580763397	0
+bin	-0.016639193587799	3271
+bin	0.016639193587799	19
+bin	0.049917580763397	12
+bin	0.083195967938995	1
+bin	0.11647435511459	0
+bin	0.14975274229019	0
+bin	0.18303112946579	0
+bin	0.21630951664139	0
+bin	0.24958790381698	0
+bin	0.28286629099258	0
+bin	0.31614467816818	3
+bin	0.34942306534378	1
+bin	0.38270145251938	0
+bin	0.41597983969497	0
+bin	0.44925822687057	0
+bin	0.48253661404617	6
+bin	0.51581500122177	0
+bin	0.54909338839737	0
+bin	0.58237177557296	0
+bin	0.61565016274856	0
+bin	0.64892854992416	0
+bin	0.68220693709976	0
+bin	0.71548532427535	0
+bin	0.74876371145095	0
+statistic Test.node[2].iWirelessNic.radio 	packetErrorRate:histogram
+field count 3313
+field mean 0.023013545987803
+field stddev 0.14915148783269
+field sum 76.243877857592
+field sqrsum 75.433944850165
+field min 0
+field max 1
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.43333333333333	0
+bin	-0.36666666666667	0
+bin	-0.3	0
+bin	-0.23333333333333	0
+bin	-0.16666666666667	0
+bin	-0.1	0
+bin	-0.033333333333333	3234
+bin	0.033333333333333	0
+bin	0.1	0
+bin	0.16666666666667	2
+bin	0.23333333333333	0
+bin	0.3	0
+bin	0.36666666666667	2
+bin	0.43333333333333	0
+bin	0.5	0
+bin	0.56666666666667	0
+bin	0.63333333333333	0
+bin	0.7	0
+bin	0.76666666666667	0
+bin	0.83333333333333	0
+bin	0.9	0
+bin	0.96666666666667	75
+bin	1.0333333333333	0
+bin	1.1	0
+bin	1.1666666666667	0
+bin	1.2333333333333	0
+bin	1.3	0
+bin	1.3666666666667	0
+bin	1.4333333333333	0
+bin	1.5	0
+statistic Test.node[2].iWirelessNic.radio 	minSNIR:histogram
+field count 3313
+field mean 321.47273165048
+field stddev 458.18581105372
+field sum 1065039.159958
+field sqrsum 1037683242.504
+field min 0.00051845170700502
+field max 987.1929435711
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-493.59569410799	0
+bin	-427.7828657667	0
+bin	-361.9700374254	0
+bin	-296.15720908411	0
+bin	-230.34438074282	0
+bin	-164.53155240153	0
+bin	-98.718724060232	0
+bin	-32.905895718939	2240
+bin	32.906932622353	0
+bin	98.719760963646	1
+bin	164.53258930494	3
+bin	230.34541764623	0
+bin	296.15824598752	0
+bin	361.97107432882	0
+bin	427.78390267011	0
+bin	493.5967310114	3
+bin	559.4095593527	0
+bin	625.22238769399	3
+bin	691.03521603528	1
+bin	756.84804437658	0
+bin	822.66087271787	0
+bin	888.47370105916	0
+bin	954.28652940045	1062
+bin	1020.0993577417	0
+bin	1085.912186083	0
+bin	1151.7250144243	0
+bin	1217.5378427656	0
+bin	1283.3506711069	0
+bin	1349.1634994482	0
+bin	1414.9763277895	0
+bin	1480.7891561308	0
+scalar Test.node[3].iWirelessNic.mac 	nbTxFrames 	57
+scalar Test.node[3].iWirelessNic.mac 	nbRxFrames 	89
+scalar Test.node[3].iWirelessNic.mac 	nbDroppedFrames 	51
+scalar Test.node[3].iWirelessNic.mac 	nbMissedAcks 	0
+scalar Test.node[3].iWirelessNic.mac 	nbRecvdAcks 	0
+scalar Test.node[3].iWirelessNic.mac 	nbTxAcks 	0
+scalar Test.node[3].iWirelessNic.mac 	nbDuplicates 	0
+scalar Test.node[3].iWirelessNic.mac 	meanBackoff 	0.0032290909090909
+scalar Test.node[3].iWirelessNic.mac 	nbBackoffs 	363
+scalar Test.node[3].iWirelessNic.mac 	backoffDurations 	1.17216
+scalar Test.node[3].iWirelessNic.radio 	transmissionState:count 	228
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Test.node[3].iWirelessNic.radio 	receptionState:count 	6726
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Test.node[3].iWirelessNic.radio 	radioMode:count 	116
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Test.node[3].iWirelessNic.radio 	symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Test.node[3].iWirelessNic.radio 	bitErrorRate:histogram
+field count 3298
+field mean 0.0038631540784446
+field stddev 0.020378724355585
+field sum 12.74068215071
+field sqrsum 1.4184382819846
+field min 3.5766438543913e-56
+field max 0.43178810174608
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.21336406658968	0
+bin	-0.18491552437772	0
+bin	-0.15646698216577	0
+bin	-0.12801843995381	0
+bin	-0.099569897741851	0
+bin	-0.071121355529893	0
+bin	-0.042672813317936	0
+bin	-0.014224271105979	3276
+bin	0.014224271105979	5
+bin	0.042672813317936	0
+bin	0.071121355529893	5
+bin	0.099569897741851	2
+bin	0.12801843995381	1
+bin	0.15646698216577	0
+bin	0.18491552437772	2
+bin	0.21336406658968	0
+bin	0.24181260880164	0
+bin	0.2702611510136	0
+bin	0.29870969322555	0
+bin	0.32715823543751	0
+bin	0.35560677764947	2
+bin	0.38405531986142	0
+bin	0.41250386207338	5
+bin	0.44095240428534	0
+bin	0.4694009464973	0
+bin	0.49784948870925	0
+bin	0.52629803092121	0
+bin	0.55474657313317	0
+bin	0.58319511534513	0
+bin	0.61164365755708	0
+bin	0.64009219976904	0
+statistic Test.node[3].iWirelessNic.radio 	packetErrorRate:histogram
+field count 3298
+field mean 0.51545533005522
+field stddev 0.41180385480471
+field sum 1699.9716785221
+field sqrsum 1435.3726843383
+field min 0
+field max 1
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.43333333333333	0
+bin	-0.36666666666667	0
+bin	-0.3	0
+bin	-0.23333333333333	0
+bin	-0.16666666666667	0
+bin	-0.1	0
+bin	-0.033333333333333	1121
+bin	0.033333333333333	0
+bin	0.1	0
+bin	0.16666666666667	0
+bin	0.23333333333333	0
+bin	0.3	0
+bin	0.36666666666667	1
+bin	0.43333333333333	0
+bin	0.5	1070
+bin	0.56666666666667	0
+bin	0.63333333333333	0
+bin	0.7	0
+bin	0.76666666666667	0
+bin	0.83333333333333	0
+bin	0.9	0
+bin	0.96666666666667	1106
+bin	1.0333333333333	0
+bin	1.1	0
+bin	1.1666666666667	0
+bin	1.2333333333333	0
+bin	1.3	0
+bin	1.3666666666667	0
+bin	1.4333333333333	0
+bin	1.5	0
+statistic Test.node[3].iWirelessNic.radio 	minSNIR:histogram
+field count 3298
+field mean 1.527384851476
+field stddev 1.5098812879908
+field sum 5037.3152401678
+field sqrsum 15210.226728051
+field min 0.039461394185369
+field max 12.905663467891
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-6.3894768114507	0
+bin	-5.5319150212577	0
+bin	-4.6743532310647	0
+bin	-3.8167914408717	0
+bin	-2.9592296506787	0
+bin	-2.1016678604858	0
+bin	-1.2441060702928	0
+bin	-0.38654428009979	22
+bin	0.4710175100932	2155
+bin	1.3285793002862	4
+bin	2.1861410904792	1073
+bin	3.0437028806722	1
+bin	3.9012646708651	0
+bin	4.7588264610581	0
+bin	5.6163882512511	1
+bin	6.4739500414441	0
+bin	7.3315118316371	4
+bin	8.1890736218301	0
+bin	9.0466354120231	3
+bin	9.904197202216	0
+bin	10.761758992409	0
+bin	11.619320782602	0
+bin	12.476882572795	35
+bin	13.334444362988	0
+bin	14.192006153181	0
+bin	15.049567943374	0
+bin	15.907129733567	0
+bin	16.76469152376	0
+bin	17.622253313953	0
+bin	18.479815104146	0
+bin	19.337376894339	0
+scalar Test.node[4].iWirelessNic.mac 	nbTxFrames 	59
+scalar Test.node[4].iWirelessNic.mac 	nbRxFrames 	92
+scalar Test.node[4].iWirelessNic.mac 	nbDroppedFrames 	85
+scalar Test.node[4].iWirelessNic.mac 	nbMissedAcks 	0
+scalar Test.node[4].iWirelessNic.mac 	nbRecvdAcks 	0
+scalar Test.node[4].iWirelessNic.mac 	nbTxAcks 	0
+scalar Test.node[4].iWirelessNic.mac 	nbDuplicates 	0
+scalar Test.node[4].iWirelessNic.mac 	meanBackoff 	0.0033434482758621
+scalar Test.node[4].iWirelessNic.mac 	nbBackoffs 	551
+scalar Test.node[4].iWirelessNic.mac 	backoffDurations 	1.84224
+scalar Test.node[4].iWirelessNic.radio 	transmissionState:count 	236
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Test.node[4].iWirelessNic.radio 	receptionState:count 	8868
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Test.node[4].iWirelessNic.radio 	radioMode:count 	120
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Test.node[4].iWirelessNic.radio 	symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Test.node[4].iWirelessNic.radio 	bitErrorRate:histogram
+field count 4365
+field mean 0.0058290726886336
+field stddev 0.025931331858842
+field sum 25.443902285886
+field sqrsum 3.0828162095988
+field min 3.5766438543913e-56
+field max 0.43985119908254
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.21827249038455	0
+bin	-0.18916949166661	0
+bin	-0.16006649294867	0
+bin	-0.13096349423073	0
+bin	-0.10186049551279	0
+bin	-0.07275749679485	0
+bin	-0.04365449807691	0
+bin	-0.01455149935897	3280
+bin	0.01455149935897	1063
+bin	0.04365449807691	1
+bin	0.07275749679485	3
+bin	0.10186049551279	0
+bin	0.13096349423073	0
+bin	0.16006649294867	3
+bin	0.18916949166661	0
+bin	0.21827249038455	1
+bin	0.24737548910249	0
+bin	0.27647848782043	0
+bin	0.30558148653837	0
+bin	0.33468448525631	0
+bin	0.36378748397425	0
+bin	0.39289048269219	0
+bin	0.42199348141013	14
+bin	0.45109648012807	0
+bin	0.48019947884601	0
+bin	0.50930247756395	0
+bin	0.53840547628189	0
+bin	0.56750847499983	0
+bin	0.59661147371777	0
+bin	0.62571447243571	0
+bin	0.65481747115365	0
+statistic Test.node[4].iWirelessNic.radio 	packetErrorRate:histogram
+field count 4365
+field mean 0.49348973366467
+field stddev 0.49980924206514
+field sum 2154.0826874463
+field sqrsum 2153.1853828916
+field min 0
+field max 1
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.43333333333333	0
+bin	-0.36666666666667	0
+bin	-0.3	0
+bin	-0.23333333333333	0
+bin	-0.16666666666667	0
+bin	-0.1	0
+bin	-0.033333333333333	2209
+bin	0.033333333333333	0
+bin	0.1	0
+bin	0.16666666666667	0
+bin	0.23333333333333	0
+bin	0.3	2
+bin	0.36666666666667	0
+bin	0.43333333333333	0
+bin	0.5	0
+bin	0.56666666666667	1
+bin	0.63333333333333	0
+bin	0.7	0
+bin	0.76666666666667	0
+bin	0.83333333333333	0
+bin	0.9	0
+bin	0.96666666666667	2153
+bin	1.0333333333333	0
+bin	1.1	0
+bin	1.1666666666667	0
+bin	1.2333333333333	0
+bin	1.3	0
+bin	1.3666666666667	0
+bin	1.4333333333333	0
+bin	1.5	0
+statistic Test.node[4].iWirelessNic.radio 	minSNIR:histogram
+field count 4365
+field mean 2.0132527088996
+field stddev 1.5302337963549
+field sum 8787.8480743466
+field sqrsum 27910.968858731
+field min 0.035017491273177
+field max 12.905663467891
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-6.3975668068575	0
+bin	-5.5396454613131	0
+bin	-4.6817241157687	0
+bin	-3.8238027702243	0
+bin	-2.9658814246799	0
+bin	-2.1079600791355	0
+bin	-1.2500387335911	0
+bin	-0.39211738804668	22
+bin	0.46580395749772	2134
+bin	1.3237253030421	7
+bin	2.1816466485865	1097
+bin	3.0395679941309	8
+bin	3.8974893396753	1075
+bin	4.7554106852197	0
+bin	5.6133320307641	0
+bin	6.4712533763085	0
+bin	7.3291747218529	1
+bin	8.1870960673973	13
+bin	9.0450174129417	0
+bin	9.9029387584861	0
+bin	10.76086010403	0
+bin	11.618781449575	0
+bin	12.476702795119	8
+bin	13.334624140664	0
+bin	14.192545486208	0
+bin	15.050466831752	0
+bin	15.908388177297	0
+bin	16.766309522841	0
+bin	17.624230868386	0
+bin	18.48215221393	0
+bin	19.340073559474	0
+scalar Test.node[5].iWirelessNic.mac 	nbTxFrames 	1083
+scalar Test.node[5].iWirelessNic.mac 	nbRxFrames 	1132
+scalar Test.node[5].iWirelessNic.mac 	nbDroppedFrames 	89
+scalar Test.node[5].iWirelessNic.mac 	nbMissedAcks 	0
+scalar Test.node[5].iWirelessNic.mac 	nbRecvdAcks 	0
+scalar Test.node[5].iWirelessNic.mac 	nbTxAcks 	0
+scalar Test.node[5].iWirelessNic.mac 	nbDuplicates 	0
+scalar Test.node[5].iWirelessNic.mac 	meanBackoff 	0.0018276099426386
+scalar Test.node[5].iWirelessNic.mac 	nbBackoffs 	1569
+scalar Test.node[5].iWirelessNic.mac 	backoffDurations 	2.86752
+scalar Test.node[5].iWirelessNic.radio 	transmissionState:count 	4332
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Test.node[5].iWirelessNic.radio 	receptionState:count 	8880
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Test.node[5].iWirelessNic.radio 	radioMode:count 	2168
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Test.node[5].iWirelessNic.radio 	symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Test.node[5].iWirelessNic.radio 	bitErrorRate:histogram
+field count 3341
+field mean 0.0035815591057
+field stddev 0.039181716544119
+field sum 11.965988972144
+field sqrsum 5.1704479806497
+field min 0
+field max 0.49905493542143
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.24952746771071	0
+bin	-0.21625713868262	0
+bin	-0.18298680965452	0
+bin	-0.14971648062643	0
+bin	-0.11644615159833	0
+bin	-0.083175822570238	0
+bin	-0.049905493542143	0
+bin	-0.016635164514048	3304
+bin	0.016635164514048	3
+bin	0.049905493542143	10
+bin	0.083175822570238	0
+bin	0.11644615159833	0
+bin	0.14971648062643	0
+bin	0.18298680965452	0
+bin	0.21625713868262	0
+bin	0.24952746771071	0
+bin	0.28279779673881	0
+bin	0.3160681257669	0
+bin	0.349338454795	3
+bin	0.38260878382309	4
+bin	0.41587911285119	2
+bin	0.44914944187929	0
+bin	0.48241977090738	15
+bin	0.51569009993548	0
+bin	0.54896042896357	0
+bin	0.58223075799167	0
+bin	0.61550108701976	0
+bin	0.64877141604786	0
+bin	0.68204174507595	0
+bin	0.71531207410405	0
+bin	0.74858240313214	0
+statistic Test.node[5].iWirelessNic.radio 	packetErrorRate:histogram
+field count 3341
+field mean 0.031132958960019
+field stddev 0.17368168021846
+field sum 104.01521588542
+field sqrsum 103.99049043269
+field min 0
+field max 1
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.43333333333333	0
+bin	-0.36666666666667	0
+bin	-0.3	0
+bin	-0.23333333333333	0
+bin	-0.16666666666667	0
+bin	-0.1	0
+bin	-0.033333333333333	3237
+bin	0.033333333333333	0
+bin	0.1	0
+bin	0.16666666666667	0
+bin	0.23333333333333	0
+bin	0.3	0
+bin	0.36666666666667	0
+bin	0.43333333333333	0
+bin	0.5	0
+bin	0.56666666666667	0
+bin	0.63333333333333	0
+bin	0.7	0
+bin	0.76666666666667	0
+bin	0.83333333333333	0
+bin	0.9	0
+bin	0.96666666666667	104
+bin	1.0333333333333	0
+bin	1.1	0
+bin	1.1666666666667	0
+bin	1.2333333333333	0
+bin	1.3	0
+bin	1.3666666666667	0
+bin	1.4333333333333	0
+bin	1.5	0
+statistic Test.node[5].iWirelessNic.radio 	minSNIR:histogram
+field count 3341
+field mean 323.39385088961
+field stddev 454.62062893344
+field sum 1080458.8558222
+field sqrsum 1039724670.3932
+field min 0.00059434562651767
+field max 987.1929435711
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-493.59558026711	0
+bin	-427.78275698541	0
+bin	-361.96993370371	0
+bin	-296.15711042202	0
+bin	-230.34428714032	0
+bin	-164.53146385862	0
+bin	-98.718640576921	0
+bin	-32.905817295223	2264
+bin	32.907005986476	0
+bin	98.719829268174	0
+bin	164.53265254987	0
+bin	230.34547583157	0
+bin	296.15829911327	0
+bin	361.97112239497	0
+bin	427.78394567667	0
+bin	493.59676895836	0
+bin	559.40959224006	17
+bin	625.22241552176	0
+bin	691.03523880346	0
+bin	756.84806208516	0
+bin	822.66088536685	0
+bin	888.47370864855	0
+bin	954.28653193025	1060
+bin	1020.0993552119	0
+bin	1085.9121784936	0
+bin	1151.7250017753	0
+bin	1217.537825057	0
+bin	1283.3506483387	0
+bin	1349.1634716204	0
+bin	1414.9762949021	0
+bin	1480.7891181838	0
+scalar Test.node[6].iWirelessNic.mac 	nbTxFrames 	41
+scalar Test.node[6].iWirelessNic.mac 	nbRxFrames 	1128
+scalar Test.node[6].iWirelessNic.mac 	nbDroppedFrames 	96
+scalar Test.node[6].iWirelessNic.mac 	nbMissedAcks 	0
+scalar Test.node[6].iWirelessNic.mac 	nbRecvdAcks 	0
+scalar Test.node[6].iWirelessNic.mac 	nbTxAcks 	0
+scalar Test.node[6].iWirelessNic.mac 	nbDuplicates 	0
+scalar Test.node[6].iWirelessNic.mac 	meanBackoff 	0.0034840579710145
+scalar Test.node[6].iWirelessNic.mac 	nbBackoffs 	552
+scalar Test.node[6].iWirelessNic.mac 	backoffDurations 	1.9232
+scalar Test.node[6].iWirelessNic.radio 	transmissionState:count 	164
+attr interpolationmode  sample-hold
+attr source  transmissionStateChanged
+attr title  "Radio transmission state, count"
+scalar Test.node[6].iWirelessNic.radio 	receptionState:count 	8863
+attr interpolationmode  sample-hold
+attr source  receptionStateChanged
+attr title  "Radio reception state, count"
+scalar Test.node[6].iWirelessNic.radio 	radioMode:count 	84
+attr interpolationmode  sample-hold
+attr source  radioModeChanged
+attr title  "Radio mode, count"
+statistic Test.node[6].iWirelessNic.radio 	symbolErrorRate:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min -nan
+field max -nan
+attr source  symbolErrorRate
+attr title  "Symbol error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+statistic Test.node[6].iWirelessNic.radio 	bitErrorRate:histogram
+field count 4383
+field mean 0.0072896581625147
+field stddev 0.017912126341192
+field sum 31.950571726302
+field sqrsum 1.638848337397
+field min 5.1622359391191e-21
+field max 0.3750754691208
+attr source  bitErrorRate
+attr title  "Bit error rate, histogram"
+bin	-INF	0
+bin	-0.1574281968945	0
+bin	-0.1364377706419	0
+bin	-0.1154473443893	0
+bin	-0.0944569181367	0
+bin	-0.0734664918841	0
+bin	-0.0524760656315	0
+bin	-0.0314856393789	0
+bin	-0.0104952131263	3275
+bin	0.0104952131263	1060
+bin	0.0314856393789	16
+bin	0.0524760656315	1
+bin	0.0734664918841	13
+bin	0.0944569181367	0
+bin	0.1154473443893	4
+bin	0.1364377706419	1
+bin	0.1574281968945	0
+bin	0.1784186231471	0
+bin	0.1994090493997	0
+bin	0.2203994756523	6
+bin	0.2413899019049	0
+bin	0.2623803281575	0
+bin	0.2833707544101	2
+bin	0.3043611806627	4
+bin	0.3253516069153	0
+bin	0.3463420331679	0
+bin	0.3673324594205	1
+bin	0.3883228856731	0
+bin	0.4093133119257	0
+bin	0.4303037381783	0
+bin	0.4512941644309	0
+bin	0.4722845906835	0
+statistic Test.node[6].iWirelessNic.radio 	packetErrorRate:histogram
+field count 4383
+field mean 0.50096799043347
+field stddev 0.49677665988177
+field sum 2195.7427020699
+field sqrsum 2181.4176612029
+field min 0
+field max 1
+attr source  packetErrorRate
+attr title  "Packet error rate, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.43333333333333	0
+bin	-0.36666666666667	0
+bin	-0.3	0
+bin	-0.23333333333333	0
+bin	-0.16666666666667	0
+bin	-0.1	0
+bin	-0.033333333333333	2198
+bin	0.033333333333333	3
+bin	0.1	0
+bin	0.16666666666667	0
+bin	0.23333333333333	0
+bin	0.3	0
+bin	0.36666666666667	0
+bin	0.43333333333333	0
+bin	0.5	0
+bin	0.56666666666667	0
+bin	0.63333333333333	0
+bin	0.7	0
+bin	0.76666666666667	0
+bin	0.83333333333333	3
+bin	0.9	1
+bin	0.96666666666667	2178
+bin	1.0333333333333	0
+bin	1.1	0
+bin	1.1666666666667	0
+bin	1.2333333333333	0
+bin	1.3	0
+bin	1.3666666666667	0
+bin	1.4333333333333	0
+bin	1.5	0
+statistic Test.node[6].iWirelessNic.radio 	minSNIR:histogram
+field count 4383
+field mean 1.8268636144906
+field stddev 1.7477690843032
+field sum 8007.1432223122
+field sqrsum 28013.639863962
+field min 0.070381541916152
+field max 4.8099210999277
+attr source  minSNIR
+attr title  "Min SNIR, histogram"
+bin	-INF	0
+bin	-2.2487306046479	0
+bin	-1.9350127511113	0
+bin	-1.6212948975746	0
+bin	-1.3075770440379	0
+bin	-0.99385919050116	0
+bin	-0.68014133696447	0
+bin	-0.36642348342777	0
+bin	-0.052705629891073	18
+bin	0.26101222364562	1090
+bin	0.57473007718232	1074
+bin	0.88844793071902	2
+bin	1.2021657842557	1077
+bin	1.5158836377924	0
+bin	1.8296014913291	7
+bin	2.1433193448658	0
+bin	2.4570371984025	0
+bin	2.7707550519392	41
+bin	3.0844729054759	1
+bin	3.3981907590126	0
+bin	3.7119086125493	0
+bin	4.025626466086	0
+bin	4.3393443196227	0
+bin	4.6530621731594	1073
+bin	4.9667800266961	0
+bin	5.2804978802328	0
+bin	5.5942157337695	0
+bin	5.9079335873062	0
+bin	6.2216514408429	0
+bin	6.5353692943796	0
+bin	6.8490871479163	0
+bin	7.162805001453	0

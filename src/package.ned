@@ -1,0 +1,3 @@
+package rai;
+
+@license(LGPL);
