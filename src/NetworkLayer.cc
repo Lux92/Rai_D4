@@ -8,11 +8,20 @@
 Define_Module(NetworkLayer);
 using namespace inet;
 using namespace std;
+
+
 void  NetworkLayer::initialize(int stage) {
     if(stage == INITSTAGE_LOCAL) {
+
         numNodi=getSystemModule()->par("numNodes");
         idnodo=par("Id");
         destinazione=par("Dest");
+        numSent = 0;
+        numReceived = 0;
+
+        hopCountStats.setName("hopCountStats");
+            hopCountStats.setRangeAutoUpper(0, 10, 1.5);
+            hopCountVector.setName("HopCount");
 
     }
     if(stage==INITSTAGE_NETWORK_LAYER){
@@ -31,6 +40,7 @@ void  NetworkLayer::initialize(int stage) {
 void  NetworkLayer::handleMessage(cMessage *msg) {
     if (simTime().dbl()>5){
         discovery=false;
+        recordScalar("#received", numReceived);
     }
     if (msg->arrivedOn("upperLayerIn"))
         handleMessageUpperLayer(msg);
@@ -43,6 +53,7 @@ void NetworkLayer::handleMessageUpperLayer(cMessage *msg){
     if(discovery==true) {
         Datapacket *pkt = new Datapacket();
         pkt->encapsulate(dynamic_cast<Applicationpacket *>(msg));
+
         transmitFrameBroadcast(pkt);
 
     }
@@ -69,6 +80,8 @@ void  NetworkLayer::handleMessageLowerLayer(cMessage *msg){
             matrice[pkt->getIdSource()][idnodo]=(ctrl->getRSSI())!=0 ? (1/ctrl->getRSSI()) : DBL_MAX;
             UpdateMatrice(pkt->getMatrice());
             transmitFrameBroadcast(pkt);
+
+            numReceived++;
 
             delete ctrl;
         }

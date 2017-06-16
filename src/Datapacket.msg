@@ -21,6 +21,7 @@ typedef double **Matrice;
 // TODO generated message class
 //
 
+
 class noncobject Matrice;
 packet Datapacket {
  int idSource;

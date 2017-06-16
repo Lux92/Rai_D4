@@ -22,6 +22,13 @@ using namespace omnetpp;
 
 using namespace inet;
 class NetworkLayer : public cSimpleModule {
+
+private:
+    long numSent;
+        long numReceived;
+        cLongHistogram hopCountStats;
+        cOutVector hopCountVector;
+protected:
     typedef double ** Matrice;
     bool discovery=true;
     int  idnodo;

@@ -19,10 +19,13 @@ package rai;
 // TODO auto-generated type
 //
 simple NetworkLayer
-{   parameters:
+{  
+    
+         parameters:
     string DestAddr;
     int Id;
     int Dest;
+    
     
     gates:
       input upperLayerIn;

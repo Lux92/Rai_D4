@@ -20,7 +20,7 @@ typedef double **Matrice;
 // }}
 
 /**
- * Class generated from <tt>Datapacket.msg:25</tt> by nedtool.
+ * Class generated from <tt>Datapacket.msg:26</tt> by nedtool.
  * <pre>
  * packet Datapacket
  * {
@@ -67,7 +67,7 @@ inline void doParsimPacking(omnetpp::cCommBuffer *b, const Datapacket& obj) {obj
 inline void doParsimUnpacking(omnetpp::cCommBuffer *b, Datapacket& obj) {obj.parsimUnpack(b);}
 
 /**
- * Class generated from <tt>Datapacket.msg:30</tt> by nedtool.
+ * Class generated from <tt>Datapacket.msg:31</tt> by nedtool.
  * <pre>
  * packet Applicationpacket
  * {
